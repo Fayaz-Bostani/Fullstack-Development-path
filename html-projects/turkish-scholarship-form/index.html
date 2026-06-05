@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>turkish scholarship form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Turkey Scholarship Registration Form</h1>
+            <p>It is an online registration form designed for students seeking educational scholarships at turkish
+                universities. This project collects essential information including personal details, academic background,
+                language, proficiency and motivation for pursuing studies in Turkey.
+            </p>
+        </header>
+        <main>
+            <form method ="POST" action = "">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for = "full-name">Full Name (required):</label>
+                    <input required id="full-name" name="full-name" type="text" placeholder="e.g., Jack Paul" size="20">
+                    <label for = "email">Email Address (required):</label>
+                    <input required type="text" id="email" name="email" placeholder="example@gmail.com" size="20">
+                    <label for = "age">Age (required):</label>
+                    <input required id="age" name="age" type="number">
+                    <label for="phone-number">Phone Number: </label> 
+                    <input type = "number" id="phone-number" name="phone-number" required size = "10">
+                </fieldset>
+                <fieldset>
+                    <legend>Have you previously studyied in Turkey?</legend>
+                    <input type="radio" name="study-in-turkey" id="yes-option" value = "yes">
+                    <label for = yes-option>Yes</label>
+                    <input type = "radio" id="no-option" value="no" name="study-in-turkey">
+                    <label for ="no-option">No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Select your prefred programs</legend>
+                    <input type="checkbox" name="choice" id="Engineering" value="Engineering">
+                    <label for ="Engineering">Engineering</label>
+                    <input type="checkbox" id="Medicine" value="Medicine" name="choice">
+                    <label for ="Medicine">Medicine</label>
+                    <input type="checkbox" selected id="Computer-Science" value="Computer-Science" name="choice">
+                    <label for="Computer-Science">Computer-Science</label>
+                    <input type="checkbox" id="Law" name="choice" value="Law">
+                    <label for = "Law">Law</label>
+                    <input type = "checkbox" id="Architecture" value="Architecture" name="choice">
+                    <label for = "Architecture">Architecture</label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Academic Background & Language Proficiency</legend>
+                    <label for="educational-Level">What is your current educational level?</label>
+                    <select name = "educational-level" id="educational-level">
+                        <option name="educational-level" value="High School Diploma">High School Diploma</option>
+                        <option name="educational-level" value="Bachelor's Degree">Bachelore's Degree</option>
+                        <option name="educational-level" value = "Master's Degree">Master's Degree</option>
+                        <option name="educational-level" value="PHD">PHD</option>
+                    </select>
+                    <label for="language-skill">Select your language proficiency level</label>
+                    <select name="language-skill" id="language-skill">
+                        <option name="language-skill" value="Beginner">Beginner</option>
+                        <option name = "language-skill" selected value="Intermediate">Intermediate</option>
+                        <option name="language-skill" value="Advanced">Advanced</option>
+                        <option name="language-skill" value="Native">Native</option>
+                    </select>
+                </fieldset>
+                <label for="motivation-letter">Please write your motivation letter explaining why you
+                    wish to pursue your studies in Turkey?
+                </label>
+                <textarea cols="50" rows="10" name="motivation-letter" id="motivation-letter"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
