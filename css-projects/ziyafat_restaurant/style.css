@@ -1,0 +1,102 @@
+body{
+    background-image: url(images/ziyafat_restaurant.jpeg);
+    font-family: Trebuchet Ms;
+    padding: 20px;
+}
+.menu{
+    background-color: burlywood;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px
+}
+h1,h2,p{
+    text-align: center;
+}
+
+h1,h2{
+    font-family: Georgia, serif;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+.established{
+    font-style: italic;
+}
+
+.item p{
+margin-top: 5px;
+margin-bottom: 5px;
+display: inline-block;
+font-size: 18px;
+}
+
+.pizza, .Kabab, .ice-cream, .Afghan-Cuisine, .Burger{
+    text-align: left;
+    width: 75%;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+hr{
+    height: 2px;
+    background-color: brown;
+    border-radius: brown;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+footer{
+    font-family: 14px;
+}
+
+address{
+    font-style: normal;
+}
+
+.phonenumber{
+    margin-bottom: 5px;
+}
+
+a{
+    color: black;
+}
+
+a :hover{
+color: blue;
+}
+
+a :active{
+    color: blue;
+}
+
+a :visited{
+    color: gray;
+}
+
+
+
+
