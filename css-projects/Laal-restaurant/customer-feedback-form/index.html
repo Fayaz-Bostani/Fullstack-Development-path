@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+        <title>customer-service-feedback</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <main class = "container">
+            <h1 class = "title center">Customer Feedback Form</h1>
+            <p class = "center description">We value your opinion.Please take a moment to share your experience with us.</p>
+            <form>
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for = "customer-name" >Full Name: </label>
+                    <input type="text" id = "customer-name" placeholder = "E.g., Ahmad-Karimi" required name = "customer-name">
+                    <label for = "customer-email">Email Address: </label>
+                    <input type = "email" name = "customer-email" id = "customer-email" placeholder="E.g., AhamdKarimi20@gmail.com" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Visit Details</legend>
+                    <label for = "service">Which service did you use? </label>
+                    <input type="text" id = "service" name = "service" placeholder="E.g.,Haircut,Consultation,Repair">
+                    <label for = "Date">Date of Visit: </label>
+                    <input id = "Date" name = "Date" placeholder="Enter the date you visited:" type="date"> 
+                </fieldset>
+                <fieldset>
+                    <legend>Your Experience</legend>
+                    <label for = "Excellent" class = "customer-experience">Excellent</label>
+                    <input id = "Excellent" name = "customer-experience" type = "radio" class = "radio-button" value = "excellent" > 
+                    <label for = "Good" class = "customer-experience">Good</label>
+                    <input type = "radio" checked id = "Good" class = "radio-button" value = "Good" name =  "customer-experience">
+                    <label for = "Average" class = "customer-experience">Average</label>
+                    <input type="radio" class = "radio-button" id = "Average" value = "Average" name = "customer-experience">
+                    <label class = "customer-experience" for = "Poor">Poor</label>
+                    <input name = "customer-experience" id = "Poor" value = "Poor" type="radio" class = "radio-button">  
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Comments </legend>
+                    <label for = "notes">What did you like, or what can we improve? </label>
+                    <textarea id = "notes" rows="5" cols="50" name = "notes"></textarea>
+                </fieldset>
+                <button type="submit" class = "submit-btn">Submit Form</button>
+            </form> 
+        </main>
+    </body>
+</html>

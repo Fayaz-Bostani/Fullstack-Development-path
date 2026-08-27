@@ -1,0 +1,91 @@
+body{
+    background-color: midnightblue;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke; 
+}
+
+.container{
+    background-color:#ffffff1a;
+    padding: 10px 20px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px black;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.center{
+    text-align: center;
+}
+
+.description{
+    font-size: 1.2rem;
+}
+
+fieldset legend{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+fieldset{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px ;
+    margin: 20px 0;
+}
+
+label:not(.customer-experience){
+    display: block;
+    margin: 10px 0;
+}
+
+input:not(.radio-button),textarea{
+    width: 95%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff1a;
+    padding: 10px;
+}
+
+.radio-button{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+.radio-button::before{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(3px,3px) scale(0);
+    transition:all 0.3s ease-in;
+    content: " ";
+    display: block;
+}
+
+.radio-button:checked::before{
+    transform: translate(3px,3px) scale(1);
+    background-color: green;
+}
+
+.submit-btn{
+    background-color: royalblue;
+    color:whitesmoke;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.submit-btn:hover{
+    background-color: midnightblue;
+}
