@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta charset="UTF-8">
+        <title>course-registration-form</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <main class = "container">
+            <h1 class = "center">Course Registration Form</h1>
+            <p class = "center description">Take the next step in your learning journey. Fill out the 
+                form below to reserve your spot</p>
+
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for = "student-name">Full Name: </label>
+                <input type="text" id = "student-name" name = "student-name" required placeholder="E.g.,Nargis Rezaie">
+                <label for = "student-email">Student Email: </label>
+                <input type="email" required id = "student-email" name = "student-email" placeholder = "E.g.,NargisRezaie256@gmail.com">
+                <label for = "student-phonenumber">Phone Number: </label>
+                <input type="tel" name = "student-phonenumber" id = "student-phonenumber" required placeholder="+93##########">
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Selection</legend>
+                <label for = "student-course">Which course are you interested in? </label>
+                <select class = "courses" id = "student-course" name = "student-course">
+                    <option>Web Development</option>
+                    <option>Graphic Design</option>
+                    <option>English Language</option>
+                    <option>Digital Marketing</option>
+                    <option>ICDL</option>
+                </select>
+            </fieldset>
+            
+            <fieldset class = "radio-group">
+                <legend>Preferred Class Format</legend>
+                <label class = "class-types" for = "in-person">In-Person</label>
+                <input type="radio" name = "class" id = "in-person" class = "radio-btn" value="in-person">
+                <label class = "class-types" for = "online">Online</label>
+                <input type="radio" name = "class" id = "online" checked class = "radio-btn" value="online">
+                <label for = "hybrid" class = "class-types">Hybrid</label>
+                <input type="radio" id = "hybrid" name = "class" class = "radio-btn" value = "hybrid">
+            </fieldset>
+
+            <fieldset class = "radio-group">
+                <legend>Your Current Level</legend>
+                <label class = "skill-levels" for = "beginner">Beginner</label>
+                <input type="radio" name = "skill" id = "beginner" checked class = "radio-btn" value="beginner">
+                <label class = "skill-levels" for = "intermediate">Intermediate</label>
+                <input type="radio" name = "skill" id = "beginner" class = "radio-btn" value = "intermediate">
+                <label for = "advanced" class = "skill-levels">Advanced</label>
+                <input type="radio" id = "advanced" name = "skill" class = "radio-btn" value = "advanced">
+            </fieldset>
+
+            <fieldset>
+                <legend>Motivation</legend>
+                <label for = "reason">Why do you want to join this course?</label>
+                <textarea id = "reason" cols = "40" rows = "5" name = "reason"></textarea>
+            </fieldset>
+
+            <button type="submit" class = "submit-btn">Register Now</button>
+        </main>
+    </body>
+</html>

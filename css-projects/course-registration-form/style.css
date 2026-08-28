@@ -1,0 +1,114 @@
+body{
+    background-color: #eef5f4;
+    color:#2c3e35;
+}
+
+.container{
+    box-shadow: 0 5px 15px black;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.description{
+    font-size: 1.2rem;
+}
+
+fieldset{
+    margin:20px 0;
+    padding: 20px;
+    border: 1px solid #a8c5bd;
+    border-radius: 5px;
+}
+
+label:not(.class-types):not(.skill-levels){
+    display: block;
+    margin: 10px 0;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+fieldset legend{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+input:not(.radio-btn) , textarea,select{
+    width:95%;
+    border: 2px solid #a8c5bd;
+    border-radius: 5px;
+    padding: 10px ;
+}
+
+.submit-btn{
+    padding:12px 20px;
+    font-size: 1.2rem;
+    margin: auto ;
+    background-color: #2f7d6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.submit-btn:hover{
+    background-color: #235c50;
+}
+
+input:not(.radio-btn):focus , textarea:focus,select:focus{
+    background-color: #2f7d6b;
+    outline:none;
+}
+
+.radio-btn{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    vertical-align: bottom;
+}
+
+.radio-btn::before{
+    content:" ";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transform: translate(3px,3px) scale(0);
+    display: block;
+    transition: all 0.3s ease-in;
+}
+
+.radio-btn:checked::before{
+    background-color: green;
+    transform: translate(3px,3px) scale(1);
+
+}
+
+input:valid,textarea:valid,select:valid{
+    border-color: green;
+}
+
+input:invalid,textarea:invalid,select:invalid{
+    border-color: red;
+}
+
+.radio-group input[type = "radio"]:checked{
+    border-color: blue;
+    box-shadow: 2px 3px 10px black;
+    background-color: burlywood;
+}
+
+.radio-group input[type="radio"]:checked + label{
+    color: red;
+}
