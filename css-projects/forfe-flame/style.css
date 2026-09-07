@@ -1,0 +1,46 @@
+.forge-canvas{
+    width: 500px;
+    height: 600px;
+    background-color: #1a1210;
+    filter: blur(2px);
+    overflow: hidden;
+}
+
+.forge-frame{
+    border: 40px solid black;
+    padding: 40px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.flame-outer{
+    width: 320px;
+    height: 260px;
+    border-radius: 8px;
+    transform: rotate(0.3deg);
+    background-color: #fff4c2;
+    box-shadow: 0 0 3px 3px #fff4c2;
+
+}
+
+.flame-mid{
+    background-color: #f5a623;
+    box-shadow: 0 0 3px 3px #f5a623;
+    width: 240px;
+    height: 180px;
+    transform: rotate(-4.5);
+    border-radius: 6px;
+}
+
+.flame-core{
+    background-color: #e8590c;
+    box-shadow: 0 0 5px 5px #e8590c;
+    width: 160px;
+    height: 110px;
+    border-radius: 5px;
+    transform: rotate(0.7);
+}
+
+.flame-core,.flame-mid,.flame-outer{
+    filter: blur(1px);
+}

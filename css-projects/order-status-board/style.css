@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.status-box{
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 150px;
+    max-height: 140px;
+    font-size: 1.125 rem;
+    font-style: bold;
+    align-items: center;
+    margin: 10px;
+}
+
+.status-container{
+    width: 60%;
+    height: 600px;
+    display: flex;
+    align-content: space-evenly;
+    padding: 10px;
+    margin: 20px , auto;
+    flex-wrap: wrap;
+}
+
+.status-new{
+    background-color: #f5a623;
+    order:2;
+    flex-grow: 1;
+}
+
+.status-progress{
+    order: 1;
+    flex-grow: 2;
+    background-color: #e8590c;
+}
+
+.status-materials{
+    background-color: #6b7280;
+    order: 3;
+}
+
+.status-ready{
+    order: 5;
+    flex-grow: 1.5;
+    background-color:#2e7d32; 
+}
+
+.status-delivered{
+    background-color: #1a1210;
+    order: 6;
+    flex-shrink: 3;
+}
+
+.status-finishing{
+    background-color: #d4af37;
+    order: 4;
+    flex-grow: 1;
+}
