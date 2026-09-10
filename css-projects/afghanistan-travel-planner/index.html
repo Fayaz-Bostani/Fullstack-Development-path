@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>          
+        <meta Charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name = "description" content="afghanistan travel planner is a smart guide designed to help travelers explore
+                    afghanistan with ease.">
+        <title>Afghanistan Travel Planner</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <header>
+            <img src="image/company-logo.jpg" alt = "the-comapany logo" id = "logo">
+            <h1>Explore Afghanistan</h1>
+            <nav>
+                <ul>
+                    <li><a href = "#Traveler-Info">Info</a></li>
+                    <li><a href = "#Traveler-Preferences">Preferences</a></li>
+                    <li><a href = "#Trip-Details">Details</a></li>
+                    <li><a href = "#Contact-Info">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action = "#" method="post">
+                <section role="region" aria-labelledby="Traveler-Info">
+                    <h2 id = "Traveler-Info">Traveler Info</h2>
+                    
+                        <div class = "info">
+                            <label for = "name">Name:</label>
+                             <input type="text" id = "name" name = "name">
+                        </div>
+                        <div class = "info">
+                            <label for = "email">Email:</label> 
+                            <input type="email" id = "email" name = "email">
+                        </div>
+                        <div class = "info">
+                            <label for = "date">Travel Date:</label>
+                            <input type="date" name = "date" id = "date">
+                        </div>
+                </section>
+ 
+                <section role = "region" aria-labelledby="Traveler-Preferences">
+                    <h2 id = "Traveler-Preferences">Preferences</h2>
+                    <div class = "question-block">
+                        <h3><span class = "sr-only">Question</span>1</h3>
+                        <fieldset class = "question" name = "travel-questions">
+                            <legend>Where would you like to travel? </legend>
+                            <ul class = "answers-list">
+                                <li><label for = "q1-a1"><input id = "q1-a1" name = "q1" value = "bamyan" type="radio">Bamyan</li>
+                                <li><label for = "q1-a2"><input id = "q1-a2" name = "q1" value = "herat" type="radio">Herat</li>
+                                <li><label for = "q1-a3"><input id = "q1-a3" name = "q1" value = "balkh" type="radio">Balkh</li>
+                                <li><label for = "q1-a4"><input id = "q1-a4" name = "q1" value = "kabul" type="radio">Kabul</li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class = "question-block">
+                        <h3><span class = "sr-only">Question</span>2</h3>
+                        <fieldset class = "question" name = "travel-questions">
+                            <legend>What type of trip do you prefer? </legend>
+                            <ul class = "answers-list">
+                                <li><label for ="q2-a1"><input type="radio" id = "q2-a1" name = "q2" value = "adventure">Adventure</label></li>
+                                <li><label for ="q2-a2"><input type="radio" id = "q2-a2" name = "q2" value = "cultural">Cultural</label></li>
+                                <li><label for ="q2-a3"><input type="radio" id = "q2-a3" name = "q2" value = "relaxing">Relaxing</label></li>
+                                <li><label for ="q2-a4"><input type="radio" id = "q2-a4" name = "q2" value = "historical">Historical</label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+
+                <section role = "region" aria-labelledby="Trip-Details">
+                    <h2 id = "Trip-Details">Travel Details</h2>
+                    <div class = "formrow">
+                        <div class = "question-block">
+                            <label for = "selector">How long will you stay? </label>
+                        </div>
+                        <div class = "answer">
+                            <select id = "selector" name = "selector">
+                                <option value = "">select an option</option>
+                                <option value = "1-3-days">1-3 Days</option>
+                                <option value = "4-7-days">4-7 Days</option>
+                                <option value = "1-2-weeks">1-2 Weeks</option>
+                                <option value = "more-than-2-weeks">More than two weeks</option> 
+                            </select>
+                        </div>
+
+                        <div class = "question-block">
+                            <label for = "note">Do you have any special requests? </label>
+                        </div>
+                        <div class = "answer">
+                                <textarea id = "note" name = "note" rows = 5 cols = "40"></textarea>    
+                        </div>
+                    </div>
+                </section>
+
+                <button type="submit">Plan My Trip</button>
+            </form>
+        </main>
+
+        <footer>
+            <address id = "Contact-Info">
+                <a href = "https://www.daryaexpeditions.com">Darya Expeditions</a><br>
+                Pul-e-Surkh Road<br>
+                Kabul<br>
+                Afghanistan<br>
+            </address>
+        </footer>
+    </body>
+</html> 
